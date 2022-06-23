@@ -1,5 +1,5 @@
-#ifndef MAIN_FUNTIONS
-#define MAIN_FUNTIONS
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 
 char *_strcat(char *dest, char *src);
