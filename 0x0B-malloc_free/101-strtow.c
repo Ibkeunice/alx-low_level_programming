@@ -9,6 +9,25 @@
  * Return: no return
  */
 
+void ch_free_grid(char **grid, unsigned int height)
+{
+if (grid != NULL && height != 0)
+{
+for (; height > 0; height--)
+free(grid[height]);
+free(grid[height]);
+free(grid);
+}
+}
+
+/**
+ * strtow - splits a string into words.
+ * @str: string.
+ *
+ * Return: pointer of an array of integers
+ */
+
+
 char **strtow(char *str)
 {
 char **aout;
