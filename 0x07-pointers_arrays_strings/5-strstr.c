@@ -1,19 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ * _strstr - finds the first occurrence of the substring.
+ * needle in the string haystack.
+ * @haystack: entire string.
+ * @needle: substring.
+ * Return: pointer to the beginning of located substring or
+ * NULL if the substring is not found.
  */
 
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-char *b = "hello, world";
-char *c = "world";
-char *d;
+char *bhaystack;
+char *pneedle;
 
-d = _strstr(b, c);
-printf("%s\n", d);
+while (*haystack != '\0')
+{
+bhaystack = haystack;
+pneedle = needle;
+
+while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+{
+haystack++;
+pneedle++;
+}
+if (!*pneedle)
+return (bhaystack);
+haystack = bhaystack + 1;
+}
 return (0);
 }
