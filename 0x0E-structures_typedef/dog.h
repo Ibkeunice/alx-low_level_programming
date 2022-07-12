@@ -1,5 +1,5 @@
-#ifndef _DOG_H_
-#define _DOG_H_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 
 /**
