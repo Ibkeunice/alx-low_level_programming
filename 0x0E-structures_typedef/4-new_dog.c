@@ -43,5 +43,5 @@ for (i = 0; i < lname; i++)
 p_dog->name[i] = name[i];
 p_dog->name[i] = '\0';
 
-return (p_dog);
+return (p_dog)
 }
